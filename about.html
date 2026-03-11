@@ -1,19 +1,32 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre équipe – Parapente Méribel</title>
     <meta name="description" content="Découvrez l’équipe de Parapente Méribel : Stéphane et Pierre, pilotes professionnels passionnés par le vol libre à Méribel.">
+    <link rel="canonical" href="about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Notre équipe – Parapente Méribel">
+    <meta property="og:description" content="Rencontrez Stéphane et Pierre, vos pilotes de parapente à Méribel.">
+    <meta property="og:url" content="about.html">
+    <meta property="og:image" content="images/stephane.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notre équipe – Parapente Méribel">
+    <meta name="twitter:description" content="Des pilotes passionnés et expérimentés pour vos vols à Méribel.">
+    <meta name="twitter:image" content="images/stephane.png">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body class="home-bg">
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <header>
-    <nav>
-        <ul>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        <ul id="primary-nav">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html" class="active">Notre équipe</a></li>
+            <li><a href="about.html" aria-current="page">Notre équipe</a></li>
             <li><a href="services.html">Prestations & Tarifs</a></li>
             <li><a href="gallery.html">Photos/Vidéos</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -22,20 +35,20 @@
     </nav>
 </header>
 
-<main>
-    <section class="about">
+<main id="main-content">
+    <section class="about" data-reveal>
         <h1>Notre équipe</h1>
         <p>
             Chez <strong>Parapente Méribel</strong>, vous êtes entre de bonnes mains ! Découvrez les visages derrière vos vols inoubliables.
         </p>
         <div class="team-list">
-            <div class="team-member">
-                <img src="/images/stephane.png" alt="Stéphane, pilote parapente Méribel">
+            <div class="team-member" data-reveal>
+                <img src="images/stephane.png" alt="Stéphane, pilote parapente Méribel" loading="lazy" decoding="async">
                 <h2>Stéphane</h2>
                 <p>Pilote diplômé d’État, passionné de parapente depuis plus de 35 ans. Stéphane aime partager sa passion et faire découvrir la magie du vol libre à tous, petits et grands.</p>
             </div>
-            <div class="team-member">
-                <img src="images/stephane.png" alt="Pierre, pilote parapente Méribel">
+            <div class="team-member" data-reveal>
+                <img src="images/stephane.png" alt="Pierre, pilote parapente Méribel" loading="lazy" decoding="async">
                 <h2>Pierre</h2>
                 <p>Pilote professionnel, pédagogue et rassurant, Pierre vous accompagne pour un baptême ou un vol sensation en toute sécurité, dans la bonne humeur et la convivialité.</p>
             </div>
@@ -44,8 +57,12 @@
     </section>
 </main>
 
+<a class="mobile-sticky-cta" href="contact.html">Réserver maintenant</a>
+
 <footer>
-    <p>&copy; 2025 Parapente Méribel. Tous droits réservés.</p>
+    <p>&copy; 2026 Parapente Méribel. Tous droits réservés.</p>
 </footer>
+<script src="js/nav.js" defer></script>
+<script src="js/reveal.js" defer></script>
 </body>
 </html>

@@ -1,55 +1,69 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Réservations – Parapente Méribel</title>
     <meta name="description" content="Contactez Parapente Méribel pour réserver votre vol biplace, demander des informations ou organiser un événement.">
+    <link rel="canonical" href="contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Contact & Réservations – Parapente Méribel">
+    <meta property="og:description" content="Contactez-nous pour réserver votre vol ou poser vos questions.">
+    <meta property="og:url" content="contact.html">
+    <meta property="og:image" content="images/parapente6.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact & Réservations – Parapente Méribel">
+    <meta name="twitter:description" content="Téléphone et WhatsApp pour joindre directement Stéphane et Pierre.">
+    <meta name="twitter:image" content="images/parapente6.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body class="home-bg">
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <header>
-    <nav>
-        <ul>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        <ul id="primary-nav">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html" class="active">Notre équipe</a></li>
+            <li><a href="about.html">Notre équipe</a></li>
             <li><a href="services.html">Prestations & Tarifs</a></li>
             <li><a href="gallery.html">Photos/Vidéos</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
     </nav>
 </header>
-<main>
-    <section class="contact-section">
+<main id="main-content">
+    <section class="contact-section" data-reveal>
         <h1>Contact & Réservations</h1>
         <p>
             Pour réserver un vol, poser une question ou organiser un événement, contactez-nous directement :
         </p>
         <div class="contact-cards">
-            <div class="contact-card">
+            <div class="contact-card" data-reveal>
                 <h2>Stéphane Gorrand</h2>
                 <p>
                     <strong>Tél :</strong> <a href="tel:0612457517">06 12 45 75 17</a><br>
-                    <strong>WhatsApp :</strong> <a href="https://wa.me/33612457517" target="_blank">Écrire sur WhatsApp</a>
+                    <strong>WhatsApp :</strong> <a href="https://wa.me/33612457517" target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp</a>
                 </p>
             </div>
-            <div class="contact-card">
+            <div class="contact-card" data-reveal>
                 <h2>Pierre Bouvier Garzon</h2>
                 <p>
                     <strong>Tél :</strong> <a href="tel:0663765654">06 63 76 56 54</a><br>
-                    <strong>WhatsApp :</strong> <a href="https://wa.me/33663765654" target="_blank">Écrire sur WhatsApp</a>
+                    <strong>WhatsApp :</strong> <a href="https://wa.me/33663765654" target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp</a>
                 </p>
             </div>
-            <div class="contact-card">
+            <div class="contact-card" data-reveal>
                 <h2>Office du tourisme (juillet-août)</h2>
                 <p>
                     <strong>Tél :</strong> <a href="tel:0479086725">04 79 08 67 25</a>
                 </p>
             </div>
         </div>
-        <div class="contact-info">
+
+        <div class="contact-info" data-reveal>
             <h3>Où nous trouver ?</h3>
             <p>
                 Rendez-vous à l’aire d’atterrissage du stade de slalom du Corbey, près de la télécabine Saulire Express, Méribel.
@@ -60,7 +74,7 @@
                         width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-        <div class="contact-note">
+        <div class="contact-note" data-reveal>
             <p>
                 <strong>Conseil :</strong> Privilégiez l’appel ou WhatsApp pour une réponse rapide, surtout en dehors des vacances scolaires.<br>
                 <br>
@@ -70,8 +84,12 @@
     </section>
 </main>
 
+<a class="mobile-sticky-cta" href="tel:0612457517">Appeler pour réserver</a>
+
 <footer>
-    <p>&copy; 2025 Parapente Méribel. Tous droits réservés.</p>
+    <p>&copy; 2026 Parapente Méribel. Tous droits réservés.</p>
 </footer>
+<script src="js/nav.js" defer></script>
+<script src="js/reveal.js" defer></script>
 </body>
 </html>

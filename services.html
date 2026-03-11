@@ -1,55 +1,68 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestations & Tarifs – Parapente Méribel</title>
+    <title>Prestations & Tarifs - Parapente Méribel</title>
     <meta name="description" content="Vols biplace, baptêmes, tarifs été, hiver et hors saison à Méribel. Découvrez toutes nos formules et options.">
+    <link rel="canonical" href="services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Prestations & Tarifs - Parapente Méribel">
+    <meta property="og:description" content="Consultez toutes les formules de vol parapente biplace à Méribel.">
+    <meta property="og:url" content="services.html">
+    <meta property="og:image" content="images/parapente9.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prestations & Tarifs - Parapente Méribel">
+    <meta name="twitter:description" content="Découvrez nos formules été, hiver et hors saison.">
+    <meta name="twitter:image" content="images/parapente9.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body class="home-bg">
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <header>
-    <nav>
-        <ul>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        <ul id="primary-nav">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html" class="active">Notre équipe</a></li>
-            <li><a href="services.html">Prestations & Tarifs</a></li>
+            <li><a href="about.html">Notre équipe</a></li>
+            <li><a href="services.html" aria-current="page">Prestations & Tarifs</a></li>
             <li><a href="gallery.html">Photos/Vidéos</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a xhref="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-<main>
-    <section class="services-preview">
+<main id="main-content">
+    <section class="services-preview" data-reveal>
         <h1>Prestations & Tarifs</h1>
         <p>
             Nos formules de vol varient selon la saison et vos envies.<br>
-            Tous les vols sont encadrés par des pilotes diplômés d’État, matériel fourni et briefing sécurité inclus.
+            Tous les vols sont encadrés par des pilotes diplômés d'État, matériel fourni et briefing sécurité inclus.
         </p>
 
         <div class="services-list">
-            <div class="service-item">
-                <h2>Été (1er juillet – 31 août)</h2>
+            <div class="service-item" data-reveal>
+                <h2>Été (1er juillet - 31 août)</h2>
                 <ul>
                     <li><strong>Vol de 900m (matin ou après-midi) :</strong> <span class="price">120€</span></li>
                     <li><strong>Vols enfants (25-40kg, 9h30) :</strong> <span class="price">120€</span></li>
                     <li><strong>Vol Premium (45 min+, juillet uniquement, vidéo incluse) :</strong> <span class="price">300€</span></li>
                 </ul>
-                <p>Montée en télécabine/télésiège incluse (déduction si déjà titulaire d’un titre de transport).<br>
+                <p>Montée en télécabine/télésiège incluse (déduction si déjà titulaire d'un titre de transport).<br>
                     Atterrissage à la Chaudanne, près du stade de slalom du Corbey.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-reveal>
                 <h2>Hors vacances scolaires (mai, juin, septembre, octobre)</h2>
                 <ul>
                     <li><strong>1 à 3 personnes :</strong> <span class="price">120€</span> / vol</li>
                     <li><strong>Famille/groupe (4-5 pers) :</strong> <span class="price">110€</span> / vol</li>
                     <li><strong>Famille/groupe (6 pers et +) :</strong> <span class="price">100€</span> / vol</li>
                 </ul>
-                <p>Vols à la carte selon météo et envies, possibilité d’atterrissages variés et vols hors vallée (Courchevel, Bozel, etc.).</p>
+                <p>Vols à la carte selon météo et envies, possibilité d'atterrissages variés et vols hors vallée (Courchevel, Bozel, etc.).</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-reveal>
                 <h2>Hiver</h2>
                 <ul>
                     <li><strong>Vol biplace (900m dénivelé) :</strong> <span class="price">à partir de 120€</span></li>
@@ -59,7 +72,7 @@
             </div>
         </div>
 
-        <div class="options">
+        <div class="options" data-reveal>
             <h3>Options & Infos</h3>
             <ul>
                 <li>Vidéo & photos HD de votre vol : <strong>30€</strong></li>
@@ -77,8 +90,12 @@
     </section>
 </main>
 
+<a class="mobile-sticky-cta" href="contact.html">Réserver maintenant</a>
+
 <footer>
-    <p>&copy; 2025 Parapente Méribel. Tous droits réservés.</p>
+    <p>&copy; 2026 Parapente Méribel. Tous droits réservés.</p>
 </footer>
+<script src="js/nav.js" defer></script>
+<script src="js/reveal.js" defer></script>
 </body>
 </html>

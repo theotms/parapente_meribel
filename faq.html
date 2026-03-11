@@ -1,108 +1,121 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ – Parapente Méribel</title>
     <meta name="description" content="Questions fréquentes sur le parapente à Méribel : sécurité, conditions, âge, poids, météo, réservation, etc.">
+    <link rel="canonical" href="faq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="FAQ – Parapente Méribel">
+    <meta property="og:description" content="Toutes les réponses sur les vols parapente à Méribel.">
+    <meta property="og:url" content="faq.html">
+    <meta property="og:image" content="images/parapente9.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ – Parapente Méribel">
+    <meta name="twitter:description" content="Âge, météo, sécurité, réservation : consultez notre FAQ.">
+    <meta name="twitter:image" content="images/parapente9.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body class="home-bg">
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">Notre équipe</a></li>
-                <li><a href="services.html">Prestations & Tarifs</a></li>
-                <li><a href="gallery.html">Photos/Vidéos</a></li>
-                <li><a href="faq.html" class="active">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        <ul id="primary-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Notre équipe</a></li>
+            <li><a href="services.html">Prestations & Tarifs</a></li>
+            <li><a href="gallery.html">Photos/Vidéos</a></li>
+            <li><a href="faq.html" aria-current="page">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
-<main>
-    <section class="faq-section">
+<main id="main-content">
+    <section class="faq-section" data-reveal>
         <h1>FAQ – Questions fréquentes</h1>
         <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Le parapente est-il accessible à tous&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                    <span>Le parapente est-il accessible à tous&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>
                     <p>Oui, le vol biplace est accessible à la plupart des personnes, enfants comme adultes. Il suffit d'être en bonne forme physique et de pouvoir courir quelques mètres au décollage. Pour les enfants, le poids minimum est d'environ 25 kg.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Y a-t-il une limite d'âge ou de poids&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                    <span>Y a-t-il une limite d'âge ou de poids&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>
                     <p>Il n'y a pas de limite d'âge stricte, mais le poids minimum est de 25 kg et le poids maximum conseillé est d'environ 100 kg. Contactez-nous si vous avez un doute.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Faut-il une expérience ou un niveau sportif particulier&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                    <span>Faut-il une expérience ou un niveau sportif particulier&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>
                     <p>Non, aucune expérience n'est nécessaire. Nos pilotes s'occupent de tout et vous expliquent les étapes avant le vol.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Comment se passe le décollage et l'atterrissage&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                    <span>Comment se passe le décollage et l'atterrissage&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>
                     <p>Le décollage se fait en douceur, en courant quelques mètres. L'atterrissage est également progressif, souvent debout, accompagné par le pilote.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Que faut-il prévoir ou apporter&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                    <span>Que faut-il prévoir ou apporter&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
                     <p>Prévoyez des vêtements adaptés à la météo, des chaussures fermées type baskets ou randonnée, et des lunettes de soleil. Le reste du matériel est fourni.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Que se passe-t-il en cas de mauvaise météo&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                    <span>Que se passe-t-il en cas de mauvaise météo&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" hidden>
                     <p>La sécurité est notre priorité. Si les conditions ne sont pas favorables, le vol est reporté ou annulé sans frais.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Peut-on prendre des photos ou vidéos pendant le vol&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
+                    <span>Peut-on prendre des photos ou vidéos pendant le vol&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" hidden>
                     <p>Oui, nos pilotes proposent une option vidéo/photos HD. Vous pouvez aussi apporter votre propre caméra type GoPro (fixation possible sur le casque).</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Comment réserver&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
+                    <span>Comment réserver&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8" hidden>
                     <p>Contactez-nous par téléphone, WhatsApp ou via l'office du tourisme (en été). Toutes les infos sont sur la page <a href="contact.html">Contact</a>.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <h2>Où a lieu le rendez-vous&nbsp;?</h2>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-9" id="faq-question-9">
+                    <span>Où a lieu le rendez-vous&nbsp;?</span>
+                    <span class="faq-toggle" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9" hidden>
                     <p>Le rendez-vous est à l'aire d'atterrissage du stade de slalom du Corbey, près de la télécabine Saulire Express à Méribel.</p>
                 </div>
             </div>
@@ -110,10 +123,14 @@
     </section>
 </main>
 
+<a class="mobile-sticky-cta" href="contact.html">Réserver maintenant</a>
+
 <footer>
-    <p>&copy; 2025 Parapente Méribel. Tous droits réservés.</p>
+    <p>&copy; 2026 Parapente Méribel. Tous droits réservés.</p>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/nav.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/reveal.js" defer></script>
 </body>
 </html>

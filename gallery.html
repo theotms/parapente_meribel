@@ -1,54 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie Parapente Méribel</title>
+    <meta name="description" content="Découvrez en images les vols parapente biplace à Méribel : décollages, panoramas et souvenirs de vol.">
+    <link rel="canonical" href="gallery.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Galerie Parapente Méribel">
+    <meta property="og:description" content="Revivez en images l'expérience parapente à Méribel.">
+    <meta property="og:url" content="gallery.html">
+    <meta property="og:image" content="images/parapente7.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galerie Parapente Méribel">
+    <meta name="twitter:description" content="Photos de vols parapente en tandem à Méribel.">
+    <meta name="twitter:image" content="images/parapente7.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html" class="active">Notre équipe</a></li>
-                <li><a href="services.html">Prestations & Tarifs</a></li>
-                <li><a href="gallery.html">Photos/Vidéos</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        <ul id="primary-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Notre équipe</a></li>
+            <li><a href="services.html">Prestations & Tarifs</a></li>
+            <li><a href="gallery.html" aria-current="page">Photos/Vidéos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
-<h1>Galerie photos</h1>
-<div class="gallery-grid">
-    <img src="images/parapente1.jpeg" alt="Décollage parapente à Méribel" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente2.jpeg" alt="Préparation au vol" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente3.jpeg" alt="Vol au-dessus des montagnes" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente4.jpeg" alt="Aile de parapente dans le ciel bleu" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente5.jpeg" alt="Parapente en duo" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente6.jpeg" alt="Vue sur la vallée" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente7.jpeg" alt="Parapente au coucher du soleil" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente8.jpeg" alt="Décollage depuis la montagne" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente9.jpeg" alt="Parapente en altitude" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente10.jpeg" alt="Vue panoramique" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente11.jpeg" alt="Atterrissage près du chalet" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente12.jpeg" alt="Préparation au décollage" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente13.jpeg" alt="Aile verte SILOS" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente14.jpeg" alt="Aile rose et blanche" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente15.jpeg" alt="Parapente rouge en vol" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente16.jpeg" alt="Parapente jaune sur la vallée" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente17.jpeg" alt="Parapente jaune et vert" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente18.jpeg" alt="Parapente vert en altitude" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente19.jpeg" alt="Parapente bleu ciel" onclick="openLightbox(this.src, this.alt)">
-    <img src="images/parapente20.jpeg" alt="Parapente vert et rouge" onclick="openLightbox(this.src, this.alt)">
-</div>
 
-<!-- Lightbox overlay (reuse your existing code) -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="lightbox-close" onclick="closeLightbox()">×</span>
-    <img id="lightbox-img" src="" alt="">
-    <div id="lightbox-caption"></div>
-</div>
-<script src="js/main.js"></script>
+<main id="main-content">
+    <h1 data-reveal>Galerie photos</h1>
+    <div class="gallery-grid">
+        <img src="images/parapente1.jpeg" alt="Décollage parapente à Méribel" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente2.jpeg" alt="Préparation au vol" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente3.jpeg" alt="Vol au-dessus des montagnes" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente4.jpeg" alt="Aile de parapente dans le ciel bleu" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente5.jpeg" alt="Parapente en duo" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente6.jpeg" alt="Vue sur la vallée" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente7.jpeg" alt="Parapente au coucher du soleil" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente8.jpeg" alt="Décollage depuis la montagne" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente9.jpeg" alt="Parapente en altitude" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente10.jpeg" alt="Vue panoramique" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente11.jpeg" alt="Atterrissage près du chalet" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente12.jpeg" alt="Préparation au décollage" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente13.jpeg" alt="Aile verte SILOS" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente14.jpeg" alt="Aile rose et blanche" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente15.jpeg" alt="Parapente rouge en vol" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente16.jpeg" alt="Parapente jaune sur la vallée" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente17.jpeg" alt="Parapente jaune et vert" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente18.jpeg" alt="Parapente vert en altitude" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente19.jpeg" alt="Parapente bleu ciel" loading="lazy" decoding="async" data-lightbox data-reveal>
+        <img src="images/parapente20.jpeg" alt="Parapente vert et rouge" loading="lazy" decoding="async" data-lightbox data-reveal>
+    </div>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu image" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="Fermer l'aperçu">×</button>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption"></div>
+    </div>
+</main>
+
+<a class="mobile-sticky-cta" href="contact.html">Réserver maintenant</a>
+
+<footer>
+    <p>&copy; 2026 Parapente Méribel. Tous droits réservés.</p>
+</footer>
+<script src="js/nav.js" defer></script>
+<script src="js/lightbox.js" defer></script>
+<script src="js/reveal.js" defer></script>
 </body>
 </html>

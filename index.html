@@ -1,18 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parapente Méribel - Vols Biplace & Baptêmes</title>
     <meta name="description" content="Découvrez le parapente à Méribel avec Stéphane et Pierre, pilotes professionnels. Vols biplace, baptêmes, tarifs, photos et réservations.">
+    <link rel="canonical" href="index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Parapente Méribel - Vols Biplace & Baptêmes">
+    <meta property="og:description" content="Vivez l'expérience du vol libre à Méribel avec des pilotes diplômés.">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="images/parapente3.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Parapente Méribel - Vols Biplace & Baptêmes">
+    <meta name="twitter:description" content="Réservez votre vol parapente biplace à Méribel.">
+    <meta name="twitter:image" content="images/parapente3.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body class="home-bg">
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        <ul id="primary-nav">
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
             <li><a href="about.html">Notre équipe</a></li>
             <li><a href="services.html">Prestations & Tarifs</a></li>
             <li><a href="gallery.html">Photos/Vidéos</a></li>
@@ -22,14 +35,14 @@
     </nav>
 </header>
 
-<main>
-    <section class="hero">
+<main id="main-content">
+    <section class="hero" data-reveal>
         <h1>Bienvenue chez Parapente Méribel</h1>
-        <p>Vivez l’expérience du vol libre avec des professionnels passionnés !</p>
+        <p>Vivez l'expérience du vol libre avec des professionnels passionnés.</p>
         <a href="contact.html" class="cta-btn">Réservez votre vol</a>
     </section>
 
-    <section class="about">
+    <section class="about" data-reveal>
         <h2>À propos de nous</h2>
         <p>
             Passionnés de parapente et pilotes professionnels depuis plus de 25 ans, Stéphane et Pierre partagent leur amour du vol libre à Méribel. Notre priorité : la sécurité, la convivialité et une expérience inoubliable dans les airs.
@@ -37,30 +50,31 @@
         <a href="about.html" class="cta-link">En savoir plus sur notre équipe</a>
     </section>
 
-    <section class="why-us">
+    <section class="why-us" data-reveal>
         <h2>Pourquoi choisir Parapente Méribel ?</h2>
         <ul>
-            <li>✔️ Pilotes diplômés et expérimentés</li>
-            <li>✔️ Sécurité et pédagogie avant tout</li>
-            <li>✔️ Vols adaptés à tous les niveaux</li>
-            <li>✔️ Vue imprenable sur les Alpes et la vallée de Méribel</li>
-            <li>✔️ Ambiance chaleureuse et conviviale</li>
+            <li>✔ Pilotes diplômés et expérimentés</li>
+            <li>✔ Sécurité et pédagogie avant tout</li>
+            <li>✔ Vols adaptés à tous les niveaux</li>
+            <li>✔ Vue imprenable sur les Alpes et la vallée de Méribel</li>
+            <li>✔ Ambiance chaleureuse et conviviale</li>
         </ul>
     </section>
-    <section class="services-preview">
+
+    <section class="services-preview" data-reveal>
         <h2>Nos prestations</h2>
         <div class="services-list">
-            <div class="service-item">
+            <div class="service-item" data-reveal>
                 <h3>Vol Découverte</h3>
-                <p>Un baptême de l’air accessible à tous pour découvrir les sensations uniques du parapente au-dessus de Méribel.</p>
+                <p>Un baptême de l'air accessible à tous pour découvrir les sensations uniques du parapente au-dessus de Méribel.</p>
                 <div class="price">à partir de 90€</div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-reveal>
                 <h3>Vol Sensation</h3>
                 <p>Pour les amateurs de sensations fortes, vivez un vol dynamique avec des manœuvres acrobatiques en toute sécurité.</p>
                 <div class="price">à partir de 120€</div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-reveal>
                 <h3>Vol Prestige</h3>
                 <p>Un vol plus long pour profiter pleinement du panorama exceptionnel des Alpes et de la vallée de Méribel.</p>
                 <div class="price">à partir de 150€</div>
@@ -68,41 +82,37 @@
         </div>
         <a href="services.html" class="cta-btn">Voir tous les tarifs et options</a>
     </section>
-    <section class="gallery-preview">
-        <h2>En images : l’expérience Parapente Méribel</h2>
+
+    <section class="gallery-preview" data-reveal>
+        <h2>En images : l'expérience Parapente Méribel</h2>
         <div class="gallery-thumbs">
-            <img src="images/parapente7.jpeg" alt="Décollage parapente à Méribel" onclick="openLightbox(this.src, this.alt)">
-            <img src="images/parapente9.jpeg" alt="Vue aérienne sur la vallée de Méribel" onclick="openLightbox(this.src, this.alt)">
-            <img src="images/parapente3.jpeg" alt="Sourires en vol biplace" onclick="openLightbox(this.src, this.alt)">
+            <img src="images/parapente7.jpeg" alt="Décollage parapente à Méribel" loading="lazy" decoding="async" data-lightbox>
+            <img src="images/parapente9.jpeg" alt="Vue aérienne sur la vallée de Méribel" loading="lazy" decoding="async" data-lightbox>
+            <img src="images/parapente3.jpeg" alt="Sourires en vol biplace" loading="lazy" decoding="async" data-lightbox>
         </div>
         <a href="gallery.html" class="cta-link">Voir toutes les photos</a>
     </section>
 
-    <!-- Lightbox overlay -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu image" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="Fermer l'aperçu">×</button>
         <img id="lightbox-img" src="" alt="">
         <div id="lightbox-caption"></div>
     </div>
-    <section class="cta-bottom">
-        <h2>Prêt à vivre l’aventure ?</h2>
-        <p>Contactez-nous dès aujourd’hui pour réserver votre vol ou poser vos questions. Nous sommes là pour vous accompagner dans cette expérience inoubliable à Méribel !</p>
+
+    <section class="cta-bottom" data-reveal>
+        <h2>Prêt à vivre l'aventure ?</h2>
+        <p>Contactez-nous dès aujourd'hui pour réserver votre vol ou poser vos questions. Nous sommes là pour vous accompagner dans cette expérience inoubliable à Méribel.</p>
         <a href="contact.html" class="cta-btn">Réservez votre vol maintenant</a>
-    </section>
-    <section class="gallery-preview">
-        <h2>En images : l’expérience Parapente Méribel</h2>
-        <div class="gallery-thumbs">
-            <img src="images/parapente3.jpeg" alt="Vol en parapente au-dessus des montagnes de Méribel" onclick="openLightbox(this.src, this.alt)">
-            <img src="images/parapente16.jpeg" alt="Parapente jaune survolant la vallée" onclick="openLightbox(this.src, this.alt)">
-            <img src="images/parapente19.jpeg" alt="Parapente bleu ciel au-dessus des montagnes" onclick="openLightbox(this.src, this.alt)">
-        </div>
-        <a href="gallery.html" class="cta-link">Voir toutes les photos</a>
     </section>
 </main>
 
+<a class="mobile-sticky-cta" href="contact.html">Réserver maintenant</a>
+
 <footer>
-    <p>&copy; 2025 Parapente Méribel. Tous droits réservés.</p>
+    <p>&copy; 2026 Parapente Méribel. Tous droits réservés.</p>
 </footer>
-<script src="js/main.js"></script>
+<script src="js/nav.js" defer></script>
+<script src="js/lightbox.js" defer></script>
+<script src="js/reveal.js" defer></script>
 </body>
 </html>
